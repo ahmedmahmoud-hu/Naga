@@ -275,7 +275,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           child: Image.asset('assets/images/kasct.png', height: 35),
                         ),
                         Transform.scale(
-                          scale: 0.95,
+                          scale: 0.90,
                           child: const LanguageSwitcher(),
                         ),
                       ],
