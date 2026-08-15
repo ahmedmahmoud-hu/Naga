@@ -263,7 +263,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 /// Top Bar
                 /// -----------------------------------
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
                   child: Directionality(
                     textDirection: TextDirection.ltr,
                     child: Row(
@@ -271,7 +271,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Transform.translate(
-                          offset: const Offset(0, -17),
+                          offset: const Offset(0, 0),
                           child: Image.asset('assets/images/kasct.png', height: 35),
                         ),
                         Transform.scale(
