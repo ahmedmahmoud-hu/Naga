@@ -178,4 +178,35 @@ class AuthService {
       'email': prefs.getString('email') ?? '', // 🚀 استرجاع الإيميل لعرضه
     };
   }
+
+  static Future<bool> deleteAccount() async {
+  try {
+    final prefs = await SharedPreferences.getInstance();
+    final rawCookie = prefs.getString('jwt_cookie');
+
+    final headers = <String, String>{
+      'Content-Type': 'application/json',
+    };
+
+    // إرسال JWT Cookie مع الطلب
+    if (rawCookie != null && rawCookie.isNotEmpty) {
+      headers['Cookie'] = rawCookie.split(';').first;
+    }
+
+    final response = await http.delete(
+      Uri.parse('$baseUrl/Auth/delete-account'),
+      headers: headers,
+    );
+
+    debugPrint('Delete Account Status: ${response.statusCode}');
+    debugPrint('Delete Account Response: ${response.body}');
+
+    return response.statusCode == 200;
+  } catch (e) {
+    debugPrint('Delete Account Error: $e');
+    return false;
+  }
+}
+
+  
 }
