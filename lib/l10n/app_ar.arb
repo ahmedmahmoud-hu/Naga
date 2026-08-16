@@ -137,5 +137,11 @@
   "errorOccurred": "حدث خطأ: ",
 
   "profileUpdatedAutoLogout": "تم تحديث الملف بنجاح. سيتم تسجيل خروجك تلقائياً خلال 5 ثوانٍ.",
-  "logoutNow": "تسجيل الخروج الآن"
+  "logoutNow": "تسجيل الخروج الآن",
+
+  "deleteAccount": "حذف الحساب",
+  "deleteAccountConfirmation": "هل أنت متأكد أنك تريد حذف حسابك؟ لا يمكن التراجع عن هذا الإجراء.",
+  "accountDeletedSuccessfully": "تم حذف حسابك بنجاح.",
+  "deleteAccountFailed": "فشل حذف الحساب.",
+  "errorOccurred": "حدث خطأ: "
 }
