@@ -137,6 +137,11 @@
   "errorOccurred": "Error: ",
 
   "profileUpdatedAutoLogout": "Profile updated successfully. You will be logged out automatically in 5 seconds.",
-  "logoutNow": "Logout Now"
+  "logoutNow": "Logout Now",
 
+  "deleteAccount": "Delete Account",
+  "deleteAccountConfirmation": "Are you sure you want to delete your account? This action cannot be undone.",
+  "accountDeletedSuccessfully": "Your account has been deleted successfully.",
+  "deleteAccountFailed": "Failed to delete your account.",
+  "errorOccurred": "An error occurred: "
 }
